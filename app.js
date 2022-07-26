@@ -7,7 +7,7 @@ app.use(bodyparser.urlencoded({extended:false}));
 
 //define routers
 app.get("/",function(req,resp){
-    resp.sendFile("public/empdata.html",{root:__dirname});
+    resp.sendFile("empdata.html",{root:__dirname});
 })
 
 app.post("/submit_data",function(req,resp){
